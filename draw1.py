@@ -2,14 +2,12 @@ import math
 from random import randint
 from PIL import Image, ImageDraw
 
-
 # ---------------------------------------
 # Functions
 # ---------------------------------------
 def techiniqueLine(width, height):
 
     return [(randint(0, width),randint(0, height)), (randint(0, width),randint(0, height))]
-
 
 # ---------------------------------------
 # Studio
