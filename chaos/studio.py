@@ -6,7 +6,7 @@ class Studio(object):
     def __init__(self, canvas: Canvas):
         self.canvas = canvas
 
-    def execute_moviment(self, technique: Technique):
+    def execute_technique(self, technique: Technique):
         technique.draw_on(self.canvas)
 
     def exhibition(self):
