@@ -9,7 +9,7 @@ class Canvas(object):
         self.canvas_color = canvas_color
         self.image_color = image_color
 
-    def create(self):
+    def new(self):
         return Image.new(
             self.image_color,
             (self.canvas_width, self.canvas_height),

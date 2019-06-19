@@ -1,13 +1,13 @@
-from PIL import Image, ImageDraw
+from PIL import Image as Canvas
 from .technique.technique import Technique
 
 
 class Studio(object):
-    def __init__(self, canvas: Image):
+    def __init__(self, canvas: Canvas):
         self.canvas = canvas
 
     def execute_moviment(self, technique: Technique):
-        technique.draw(ImageDraw.Draw(self.canvas))
+        technique.draw_on(self.canvas)
 
     def exhibition(self):
         self.canvas.show('Exhibition')

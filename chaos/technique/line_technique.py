@@ -1,12 +1,13 @@
-from PIL import ImageDraw
+from PIL import Image as Canvas
+from PIL.ImageDraw import Draw
 from .technique import Technique
 from ..util.random import *
 
 
 class LineTechnique(Technique):
 
-    def draw(self, draw: ImageDraw):
-        draw.line(
+    def draw_on(self, canvas: Canvas):
+        Draw(canvas).line(
             [(get_int(0, 1000), get_int(0, 1000)), (get_int(0, 1000), get_int(0, 1000))], fill=self.get_fill(), width=self.get_width()
         )
 
