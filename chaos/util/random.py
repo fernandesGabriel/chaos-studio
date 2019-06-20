@@ -6,9 +6,9 @@ def random_int(min: int, max: int):
     return randint(min, max)
 
 
-def distributed_coordinates(n, conf):
-    x = numpy.random.normal(conf['x'], conf['std_deviation'], n)
-    y = numpy.random.normal(conf['y'], conf['std_deviation'], n)
+def distributed_coordinates(n, x, y, sigma):
+    x = numpy.random.normal(x, sigma, n)
+    y = numpy.random.normal(y, sigma, n)
 
     response = []
     for i in range(n):
@@ -18,19 +18,8 @@ def distributed_coordinates(n, conf):
 
 
 def random_coordinates(n, x1, y1, sigma1, x2, y2, sigma2):
-    conf_1 = {
-        'x': x1,
-        'y': y1,
-        'std_deviation': sigma1
-    }
-    conf_2 = {
-        'x': x2,
-        'y': y2,
-        'std_deviation': sigma2
-    }
-
-    points_1 = distributed_coordinates(n, conf_1)
-    points_2 = distributed_coordinates(n, conf_2)
+    points_1 = distributed_coordinates(n, x1, y1, sigma1)
+    points_2 = distributed_coordinates(n, x2, y2, sigma2)
 
     coordinates = numpy.zeros((n, 2, 2))
 
@@ -39,7 +28,8 @@ def random_coordinates(n, x1, y1, sigma1, x2, y2, sigma2):
 
     response = []
     for i in range(n):
-        response += [(coordinates[i, 0][0], coordinates[i, 0][1]),
-                     (coordinates[i, 1][0], coordinates[i, 1][1])]
+        response.append(
+            [(coordinates[i, 0][0], coordinates[i, 0][1]), (coordinates[i, 1][0], coordinates[i, 1][1])]
+        )
 
     return response
