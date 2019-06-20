@@ -11,14 +11,25 @@ studio = Studio(
     Canvas(canvas_width, canvas_height).new()
 )
 
-trace = Trace({'fill': 1, 'width': 4})
+trace = Trace({'fill': 1, 'width': 1})
 
 for i in range(100):
+
+    coordinates = random_coordinates(
+        random_int(1, 1),
+        random_int(1, 1000),
+        random_int(1, 1000),
+        random_int(1, 60),
+        random_int(1, 1000),
+        random_int(1, 1000),
+        random_int(1, 60)
+    )
+
     studio.execute_technique(
         LineTechnique(
             trace,
-            (get_int(0, canvas_width), get_int(0, canvas_height)),
-            (get_int(0, canvas_width), get_int(0, canvas_height))
+            coordinates[0],
+            coordinates[1]
         )
     )
 
