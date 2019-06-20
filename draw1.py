@@ -19,7 +19,7 @@ for i in range(100):
         random_int(1, 50),
         random_int(1, canvas_width),
         random_int(1, canvas_height),
-        random_int(1, 60),
+        random_int(1, 100),
         random_int(1, canvas_width),
         random_int(1, canvas_height),
         random_int(1, 60)

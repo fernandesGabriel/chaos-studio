@@ -11,3 +11,6 @@ class Studio(object):
 
     def exhibition(self):
         self.canvas.show('Exhibition')
+
+    def print(self):
+        self.canvas.print('print.jpg')
