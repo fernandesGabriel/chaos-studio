@@ -27,8 +27,8 @@ for coordinate in coordinates:
     studio.execute_technique(
         LineTechnique(
             trace,
-            (coordinate[0][0], canvas_height / 4),
-            (coordinate[0][1], (canvas_height / 4) * 3)
+            (coordinate[0][0], round(canvas_height / 4)),
+            (coordinate[0][1], round(canvas_height / 4) * 3)
         )
     )
 

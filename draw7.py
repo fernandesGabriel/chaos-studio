@@ -35,10 +35,10 @@ for coordinate in coordinates:
 coordinates2 = random_coordinates(
     500,
     333,
-    canvas_height / 2,
+    round(canvas_height / 2),
     100,
     666,
-    canvas_height / 2,
+    round(canvas_height / 2),
     100
 )
 
