@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+    cli:
+        build:
+            context: .
+            target: py-cli
+        volumes:
+            - .:/chaos-studio

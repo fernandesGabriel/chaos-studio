@@ -1,0 +1,33 @@
+###> jetbrains/pycharm ###
+.idea/
+###< jetbrains/pycharm ###
+
+###> application/git ###
+.git
+**/.gitignore
+**/.gitattributes
+###< application/git ###
+
+###> application/docker ###
+.dockerignore
+.gitlab-ci.yml
+docker-compose.yaml
+Dockerfile
+/helm/
+###< application/docker ###
+
+###> application/misc ###
+Makefile
+**/*.log
+**/Thumbs.db
+**/._*
+**/.DS_Store
+###< application/misc ###
+
+###> application/python ###
+printer
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+###> application/python ###
