@@ -15,11 +15,11 @@ trace = Trace({'fill': 1, 'width': 1})
 
 coordinates = random_coordinates(
     500,
-    random_int(canvas_width/8, (canvas_width/8)*6),
-    random_int(canvas_height/8, (canvas_height/8)*6),
+    random_int(canvas_width / 8, (canvas_width / 8) * 6),
+    random_int(canvas_height / 8, (canvas_height / 8) * 6),
     random_int(1, 100),
-    random_int(canvas_width/8, (canvas_width/8)*6),
-    random_int(canvas_height/8, (canvas_height/8)*6),
+    random_int(canvas_width / 8, (canvas_width / 8) * 6),
+    random_int(canvas_height / 8, (canvas_height / 8) * 6),
     random_int(1, 50)
 )
 

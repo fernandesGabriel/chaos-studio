@@ -15,10 +15,10 @@ trace = Trace({'fill': 1, 'width': 1})
 
 coordinates = random_coordinates(
     500,
-    canvas_width/2,
+    canvas_width / 2,
     333,
     100,
-    canvas_width/2,
+    canvas_width / 2,
     666,
     100
 )
@@ -35,10 +35,10 @@ for coordinate in coordinates:
 coordinates2 = random_coordinates(
     500,
     333,
-    canvas_height/2,
+    canvas_height / 2,
     100,
     666,
-    canvas_height/2,
+    canvas_height / 2,
     100
 )
 

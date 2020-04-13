@@ -12,7 +12,7 @@ def distributed_coordinates(n, x, y, sigma):
 
     response = []
     for i in range(n):
-        response += [[x[random_int(0, n-1)], y[random_int(0, n-1)]]]
+        response += [[x[random_int(0, n - 1)], y[random_int(0, n - 1)]]]
 
     return numpy.array(response)
 
