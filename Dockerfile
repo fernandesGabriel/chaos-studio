@@ -42,3 +42,6 @@ FROM py-base AS py-cli
 COPY --from=py-dependencies /requirements /usr/local
 
 COPY . .
+
+RUN set -x \
+ && pip install -e .
