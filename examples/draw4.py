@@ -1,3 +1,4 @@
+from pathlib import Path
 from chaos.studio import Studio
 from chaos.canvas import Canvas
 from chaos.technique.trace import Trace
@@ -32,4 +33,4 @@ for coordinate in coordinates:
         )
     )
 
-studio.exhibition()
+studio.publish(Path(__file__).stem)

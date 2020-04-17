@@ -9,7 +9,7 @@ modules.xml
 ###< microsoft/visualstudiocode ###
 
 ###> application/python ###
-printer
+catalog
 __pycache__/
 *.py[cod]
 *$py.class
