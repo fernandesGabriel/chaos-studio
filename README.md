@@ -1,16 +1,29 @@
 Chaos Studio
 === 
 
-### Installing requirements
+## Requirements
 
-1 - Install requirement list using PIP:
+#### Using Python
+
+- Python 3.8
+
+#### Using Docker
+
+- Docker
+- Make
+
+## Usage
+
+#### Using Docker
+
+1 - Be amazed just running:
 ``` sh
-pip install pip install -r requirements.txt
+make start
 ```
 
-### Running samples
+## Running samples
 
-A few samples are provided using Chaos Studio. It can be found on `sample` directory:
+A few samples are provided using Chaos Studio. It can be found on `examples` directory:
 ``` sh
-python sample/<your_draw>.py
+python examples/<your_draw>.py
 ``` 
