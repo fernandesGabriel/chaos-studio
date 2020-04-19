@@ -28,3 +28,20 @@ Create your own draw using:
 ``` sh
 python sessions/<draw>.py
 ``` 
+
+## Sample images
+
+![](samples/draw1.jpg)
+
+![](samples/draw2.jpg)
+
+![](samples/draw3.jpg)
+
+![](samples/draw4.jpg)
+
+![](samples/draw5.jpg)
+
+![](samples/draw6.jpg)
+
+![](samples/draw7.jpg)
+
