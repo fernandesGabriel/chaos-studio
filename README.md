@@ -12,7 +12,7 @@ Chaos Studio
 - Docker
 - Make
 
-## Usage
+## Creating your Chaos
 
 #### Using Docker
 
@@ -21,9 +21,10 @@ Chaos Studio
 make start
 ```
 
-## Running samples
+## Running examples
 
-A few samples are provided using Chaos Studio. It can be found on `examples` directory:
+A few drawing examples can be found in the `samples` directory, and its session code into `sessions`.
+Create your own draw using:
 ``` sh
-python examples/<your_draw>.py
+python sessions/<draw>.py
 ``` 
