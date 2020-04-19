@@ -31,24 +31,24 @@ python sessions/<draw>.py
 
 ## Sample images
 
-##### Draw1
+#### Draw1
 ![](samples/draw1.jpg)
 
-##### Draw2
+#### Draw2
 ![](samples/draw2.jpg)
 
-##### Draw3
+#### Draw3
 ![](samples/draw3.jpg)
 
-#####Draw4
+#### Draw4
 ![](samples/draw4.jpg)
 
-##### Draw5
+#### Draw5
 ![](samples/draw5.jpg)
 
 ##### Draw6
 ![](samples/draw6.jpg)
 
-##### Draw7
+#### Draw7
 ![](samples/draw7.jpg)
 
