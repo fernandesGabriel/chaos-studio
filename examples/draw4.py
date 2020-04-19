@@ -3,7 +3,7 @@ from chaos.studio import Studio
 from chaos.canvas import Canvas
 from chaos.technique.trace import Trace
 from chaos.technique.line_technique import LineTechnique
-from chaos.util.random import *
+from chaos.util.random import random_coordinates, random_int
 
 canvas_width = 1000
 canvas_height = 1000
