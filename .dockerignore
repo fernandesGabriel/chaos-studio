@@ -25,7 +25,7 @@ Makefile
 ###< application/misc ###
 
 ###> application/python ###
-printer
+catalog
 __pycache__/
 *.py[cod]
 *$py.class
