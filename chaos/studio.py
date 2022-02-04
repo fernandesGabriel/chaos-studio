@@ -4,14 +4,14 @@ from .technique.technique import Technique
 
 
 class Studio(object):
-    def __init__(self, canvas: Canvas):
+    def __init__(self, canvas: Canvas, location: str = './'):
         self.canvas = canvas
-        self.location = 'catalog'
+        self.location = location
 
     def execute_technique(self, technique: Technique):
         technique.draw_on(self.canvas)
 
-    def exhibition(self, name: str = 'Exhibition'):
+    def exhibition(self, name: str = ''):
         self.canvas.show(name)
 
     def publish(self, name: str, ext: str = 'jpg'):
