@@ -1,9 +1,9 @@
-ARG PYTHON_VERSION=3.8
-
+ARG PYTHON_VERSION=3.10.2
+ARG ALPINE_VERSION=3.15
 
 # -------------------- py-base -------------------- #
 
-FROM python:${PYTHON_VERSION}-alpine3.11 AS py-base
+FROM python:${PYTHON_VERSION}-alpine${ALPINE_VERSION} AS py-base
 
 RUN set -x \
  && apk add --no-cache \

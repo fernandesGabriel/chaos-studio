@@ -5,7 +5,7 @@ Chaos Studio
 
 #### Using Python
 
-- Python 3.8
+- Python 3.10
 
 #### Using Docker
 
@@ -16,7 +16,7 @@ Chaos Studio
 
 #### Using Docker
 
-1 - Be amazed just running:
+Be amazed just running:
 ``` sh
 make start
 ```
