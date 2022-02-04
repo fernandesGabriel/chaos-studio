@@ -1,3 +1,7 @@
+.PHONY: build
+
+.DEFAULT_GOAL := build
+
 start: build cli
 
 build:
