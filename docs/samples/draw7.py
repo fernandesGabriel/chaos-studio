@@ -9,7 +9,8 @@ canvas_width = 1000
 canvas_height = 1000
 
 studio = Studio(
-    Canvas(canvas_width, canvas_height).new()
+    Canvas(canvas_width, canvas_height).new(),
+    'docs/samples'
 )
 
 trace = Trace({'fill': 1, 'width': 1})
