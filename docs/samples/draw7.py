@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from chaos.studio import Studio
 from chaos.canvas import Canvas
 from chaos.technique.trace import Trace
@@ -13,7 +14,7 @@ studio = Studio(
     'docs/samples'
 )
 
-trace = Trace({'fill': 1, 'width': 1})
+trace1 = Trace({'fill': (127, 127, 127), 'width': 2})
 
 coordinates = random_coordinates(
     500,
@@ -28,14 +29,16 @@ coordinates = random_coordinates(
 for coordinate in coordinates:
     studio.execute_technique(
         LineTechnique(
-            trace,
+            trace1,
             (coordinate[0][0], coordinate[0][1]),
             (coordinate[0][0], coordinate[1][1])
         )
     )
 
+trace2 = Trace({'fill': (0, 0, 0), 'width': 1})
+
 coordinates2 = random_coordinates(
-    500,
+    1000,
     333,
     round(canvas_height / 2),
     100,
@@ -47,7 +50,7 @@ coordinates2 = random_coordinates(
 for coordinate in coordinates2:
     studio.execute_technique(
         LineTechnique(
-            trace,
+            trace2,
             (coordinate[0][0], coordinate[0][1]),
             (coordinate[1][0], coordinate[0][1])
         )

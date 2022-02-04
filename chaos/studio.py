@@ -1,5 +1,6 @@
 from os import path, mkdir
 from PIL import Image as Canvas
+
 from .technique.technique import Technique
 
 

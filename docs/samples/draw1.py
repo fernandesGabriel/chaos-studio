@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from chaos.studio import Studio
 from chaos.canvas import Canvas
 from chaos.technique.trace import Trace
@@ -13,10 +14,9 @@ studio = Studio(
     'docs/samples'
 )
 
-trace = Trace({'fill': 1, 'width': 1})
+trace = Trace({'fill': (0, 0, 0), 'width': 1})
 
 for i in range(100):
-
     coordinates = random_coordinates(
         random_int(1, 50),
         random_int(1, canvas_width),

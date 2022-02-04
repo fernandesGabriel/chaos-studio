@@ -1,7 +1,8 @@
 from PIL import Image as Canvas
 from PIL.ImageDraw import Draw
+
 from .technique import Technique
-from trace import Trace
+from .trace import Trace
 
 
 class LineTechnique(Technique):

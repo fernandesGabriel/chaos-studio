@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from PIL import Image as Canvas
-from trace import Trace
+
+from .trace import Trace
 
 
 class Technique(ABC):
