@@ -23,32 +23,32 @@ make start
 
 ## Running examples
 
-A few drawing examples can be found in the `samples` directory, and its session code into `sessions`.
-Create your own draw using:
+A few drawing examples can be found in the `docs/samples` directory together with its code.
+Create your own drawing using:
 ``` sh
-python sessions/<draw>.py
+python docs/samples/<draw>.py
 ``` 
 
 ## Sample images
 
 #### Draw1
-![](samples/draw1.jpg)
+![](docs/samples/draw1.jpg)
 
 #### Draw2
-![](samples/draw2.jpg)
+![](docs/samples/draw2.jpg)
 
 #### Draw3
-![](samples/draw3.jpg)
+![](docs/samples/draw3.jpg)
 
 #### Draw4
-![](samples/draw4.jpg)
+![](docs/samples/draw4.jpg)
 
 #### Draw5
-![](samples/draw5.jpg)
+![](docs/samples/draw5.jpg)
 
 ##### Draw6
-![](samples/draw6.jpg)
+![](docs/samples/draw6.jpg)
 
 #### Draw7
-![](samples/draw7.jpg)
+![](docs/samples/draw7.jpg)
 
